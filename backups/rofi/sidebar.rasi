@@ -1,0 +1,114 @@
+/**
+ * ROFI Color theme
+ * User: Qball
+ * Copyright: Dave Davenport
+ */
+
+* {
+    text-color:  #D8dee9;
+    background-color:  rgba(76,86,106,1);
+    dark: #1c1c1c;
+    // Black
+    black:       #434c5e;
+    lightblack:  #554444;
+    //
+    // Red
+    red:         #cd5c5c;
+    lightred:    #cc5533;
+    //
+    // Green
+    green:       #86af80;
+    lightgreen:  #88cc22;
+    //
+    // Yellow
+    yellow:      #e8ae5b;
+    lightyellow:     #ffa75d;
+    //
+    // Blue
+    blue:      #88c0d0;
+    lightblue:     #81a1c1;
+    //
+    // Magenta
+    magenta:      #deb887;
+    lightmagenta:     #996600;
+    //
+    // Cyan
+    cyan:      #b0c4de;
+    lightcyan:     #b0c4de;
+    //
+    // White
+    white:      #bbaa99;
+    lightwhite:     #e5e9f0;
+    //
+    // Bold, Italic, Underline
+    highlight:     bold #eceff4;
+}
+window {
+    height:   60%;
+    width: 15em;
+    location: northwest;
+    anchor:   northwest;
+    border:  4px 2px 2px 2px;
+    text-color: @lightwhite;
+}
+mode-switcher {
+    border: 2px 0px 0px 0px;
+    background-color: @lightblue;
+    padding: 4px;
+}
+button selected {
+    border-color: @lightgreen;
+    text-color: @lightgreen;
+}
+inputbar {
+    background-color: @black;
+    text-color: @lightgreen;
+    padding: 4px;
+    border: 0px 0px 2px 0px;
+}
+mainbox {
+    expand: true;
+    background-color: #5e81ac;
+    spacing: 0em;
+}
+listview {
+    padding: 0em 0.2em 0.1em 0.4em;
+    dynamic: true;
+    lines: 0;
+}
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+}
+element selected  normal {
+    background-color: @blue;
+}
+element normal active {
+    text-color: @lightblue;
+}
+element normal urgent {
+    text-color: @lightred;
+}
+element alternate normal {
+}
+element alternate active {
+    text-color: @lightblue;
+}
+element alternate urgent {
+    text-color: @lightred;
+}
+element selected active {
+    background-color: @lightblue;
+    text-color: @dark;
+}
+element selected urgent {
+    background-color: @lightred;
+    text-color: @dark;
+}
+error-message {
+    expand: true;
+    background-color: red;
+    border-color: darkred;
+    border: 2px;
+    padding: 1em;
+}

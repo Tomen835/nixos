@@ -1,0 +1,6 @@
+@theme "~/.config/rofi/sidebar2.rasi"
+
+configuration {
+	show-icons: true;
+    terminal: "alacritty";
+}
